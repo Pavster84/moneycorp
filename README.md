@@ -87,6 +87,7 @@ public WebDriver driver;
 7. The "src/main/java/resources" stores the following
 - Base file which is the login url to the site opening in chrome or firefox
 - Data.properties file to ensure data driven values in one file, examples copied below;
+
 	browser=chrome
 	url=https://qa-travelmoney.moneycorp.com
 - chromedriver.exe used is located here
@@ -107,7 +108,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		glue="stepDefinations")
 public class TestRunner extends AbstractTestNGCucumberTests {
 
-# Run specific automation 
+# Run specific automation test
 
 package cucumberOptions;
 
