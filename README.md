@@ -51,6 +51,38 @@ Feature: Use the website to order USD currency
  - Reusability of code
  - Reduce or eliminate duplicate code
  
+ Example below of orderPage:
+ 
+ public class orderPage {
+
+public WebDriver driver;
+	
+	public orderPage(WebDriver driver)
+	{
+		this.driver=driver;
+	}
+	
+	By currencyHave = By.id("CurrencyFrom");
+	By currencyWant = By.id("CurrencyTo");
+	By currencyInput = By.xpath("//strong[contains(text(),'GBP')]");
+	By currencyToSelect = By.id("CurrencyToSelect");
+	By orderTotal = By.cssSelector(".pull-right.no-margin > strong");
+	By orderNowBtn = By.xpath("//span[contains(text(),'Order now')]");
+	By addNewCurrency = By.id("AddAnotherCurrency");
+	By h2Title = By.tagName("h2");
+	By proceedBtn = By.xpath("//body/div[@id='content']/div[2]/div[1]/div[1]/fieldset[1]/div[3]/button[1]");
+	By trashIcon = By.xpath("//tbody/tr[1]/td[4]/a[1]/i[1]");
+	
+	public WebElement getCurrencyFrom()
+	{
+		return driver.findElement(currencyHave);
+	}
+	
+	public WebElement getCurrencyTo()
+	{
+		return driver.findElement(currencyWant);		
+	}
+ 
 7. The "src/main/java/resources" stores the following
 - Base file which is the login url to the site opening in chrome or firefox
 - Data.properties file to ensure data driven values in one file
