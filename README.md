@@ -17,6 +17,7 @@ Create automation framework for the website http://qa-travelmoney.moneycorp.com/
 3. Create features file locted in "src/test/java/features"
   - This contains the five features in the automation test
   - The files contains Scenario Outline and Examples keyword together will form a set of test cases 
+  - Note: parameterization added to ensure repeated codes for steps is not required
   
   Features example below for the second automated example provided in the docx;
   
