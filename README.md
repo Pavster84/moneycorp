@@ -85,7 +85,9 @@ public WebDriver driver;
  
 7. The "src/main/java/resources" stores the following
 - Base file which is the login url to the site opening in chrome or firefox
-- Data.properties file to ensure data driven values in one file
+- Data.properties file to ensure data driven values in one file, examples copied below;
+	browser=chrome
+	url=https://qa-travelmoney.moneycorp.com
 - chromedriver.exe used is located here
 
 # Run all automation tests
@@ -120,10 +122,12 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 
 }
 
-# Improvements
+# Improvements and work still required
 - Need to create hooks
+- Inject Log4j logging
 - Excerise 3 for automation needs refactoring
-- Reporting required when test is executed
+- Build HTML reports when test is executed
+
 
 
 
